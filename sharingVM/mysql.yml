@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+    db-mysql:
+        image: mysql:5.7.40
+        restart: always
+        environment:
+            - MYSQL_DATABASE=viethoang
+            - MYSQL_ROOT_PASSWORD=viethoang
+        ports:
+            - "1234:1234"
